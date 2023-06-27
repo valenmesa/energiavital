@@ -1,0 +1,41 @@
+{% extends 'base/base.html' %}
+
+{%block content%}
+
+<h1>Servicios</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Nombre</td>
+            <td>Descripcion</td>
+            <td>Valor</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% if object_list %}
+        {% for servicios in object_list%}
+        <tr>
+            <td>{{servicios.id}}</td>
+            <td>{{servicios.Nombre_Servicio}}</td>
+            <td>{{servicios.Descripcion_Servicio}}</td>
+            <td>{{servicios.Valor_Servicio}}</td>
+            <td>
+                    <a class="btn btn-primary" href="{%url 'servicios_editar' servicios.id %}">
+                    Editar </a>
+                    <a class="btn btn-danger" href="{%url 'servicios_eliminar' servicios.id %}">
+                    Eliminar </a> 
+
+
+            </td>
+            {% endfor%}
+            {% else %}
+            <h1>No hay registros de servicios</h1>
+            {% endif %}
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock %}

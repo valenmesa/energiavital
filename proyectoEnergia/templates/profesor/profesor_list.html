@@ -1,0 +1,65 @@
+{% extends 'base/base.html' %}
+
+{%block content%}
+
+<h1>Profesor</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Telefono</td>
+            <td>Email</td>
+            <td>Direccion</td>
+            <td>Tipo documento</td>
+            <td>Numero documento</td>
+            <td>Acciones</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% if object_list %}
+        {% for profesor in object_list%}
+        <tr>
+            <td>{{profesor.id}}</td>
+            <td>{{profesor.nombre_profesor}}</td>
+            <td>{{profesor.apellido_profesor}}</td>
+            <td>{{profesor.telefono_profesor}}</td>
+            <td>{{profesor.email_profesor}}</td>
+            <td>{{profesor.direccion_profesor}}</td>
+            <td>{{profesor.tipo_documento.descripcion}}</td>
+            <td>{{profesor.numero_documento}}</td>
+            <td>
+                <a class="btn btn-primary" href="{%url 'profesor_editar' profesor.id %}">
+                Editar </a>
+                <a class="btn btn-danger" href="{%url 'profesor_eliminar' profesor.id %}">
+                Eliminar </a>
+
+
+            </td>
+            {% endfor%}
+            {% else %}
+            <h1>No hay registros de profesores</h1>
+            {% endif %}
+        </tr>
+    </tbody>
+</table>
+<div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+        <a href="?page=1">&laquo; Primero</a>
+        <a href="?page={{ page_obj.previous_page_number}}">Previo</a>
+        {% endif %}
+
+        <span class="current">
+            Página {{page_obj.number}} de {{ page_obj.paginator.num_pages}}.
+        </span>
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number}}">Siguiente</a>
+        <a href="?page={{ page_obj.paginator.num_pages}}">Último &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+
+{% endblock %}

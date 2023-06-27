@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+
+{%block content%}
+<h1>Cliente</h1>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>#</td>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Telefono</td>
+            <td>Email</td>
+            <td>Direccion</td>
+            <td>Tipo documento</td>
+            <td>Numero documento</td>
+            <td>Acciones</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% if object_list %}
+        {% for cliente in object_list%}
+        <tr>
+            <td>{{cliente.id}}</td>
+            <td>{{cliente.nombre_cliente}}</td>
+            <td>{{cliente.apellido_cliente}}</td>
+            <td>{{cliente.telefono_cliente}}</td>
+            <td>{{cliente.email_cliente}}</td>
+            <td>{{cliente.direccion_cliente}}</td>
+            <td>{{cliente.tipo_documento.descripcion}}</td>
+            <td>{{cliente.numero_documento}}</td>
+            <td>
+                <a class="btn btn-primary" href="{%url 'cliente_editar' cliente.id %}">
+                Editar </a>
+                <a class="btn btn-danger" href="{%url 'cliente_eliminar' cliente.id %}">
+                Eliminar </a>
+
+
+            </td>
+            {% endfor%}
+            {% else %}
+            <h1>No hay registros de clientes</h1>
+            {% endif %}
+        </tr>
+    </tbody>
+</table>
+
+
+{% endblock %}
