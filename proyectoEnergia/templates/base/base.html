@@ -613,22 +613,22 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion menu-active-bg">
 										<div class="menu-item">
-											<a class="menu-link" href="widgets/lists.html">
+											<a class="menu-link" href="{% url 'estado_listar'%}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
-												<span class="menu-title">Lists</span>
+												<span class="menu-title">Lista</span>
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link" href="widgets/statistics.html">
+											<a class="menu-link" href="{% url 'estado_crear'%}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
-												<span class="menu-title">Statistics</span>
+												<span class="menu-title">Agregar Estado</span>
 											</a>
 										</div>
-										<div class="menu-item">
+										{% comment %} <div class="menu-item">
 											<a class="menu-link" href="widgets/charts.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
@@ -659,7 +659,7 @@
 												</span>
 												<span class="menu-title">Feeds</span>
 											</a>
-										</div>
+										</div> {% endcomment %}
 									</div>
 								</div>
 							
