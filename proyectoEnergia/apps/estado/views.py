@@ -14,6 +14,7 @@ class EstadoList(ListView):
     model=Estado
     template_name='estado/estado_list.html'
     paginate_by= 2
+
 #crear registro
 class EstadoCreate(CreateView):
     model=Estado

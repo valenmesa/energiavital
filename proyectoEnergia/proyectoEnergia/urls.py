@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import re_path, include
 from apps.profesor.views import index
 from apps.cliente.views import index
-from django.contrib.auth.views import LoginView
+from django.contrib.auth.views import LoginView, logout_then_login
 
 urlpatterns = [
     re_path(r'^$', index, name='index'),
@@ -28,5 +28,6 @@ urlpatterns = [
     re_path(r'^usuario/', include('apps.usuario.urls')),
     re_path(r'^estado/', include('apps.estado.urls')),
     re_path(r'^servicios/', include('apps.servicios.urls')),
-    re_path(r'^ini/', LoginView.as_view(template_name="usuario/index.html"), name="login"),
+    re_path(r'^accounts/login/', LoginView.as_view(template_name="usuario/index.html"), name="login"),
+    re_path(r'^logout/', logout_then_login, name='logout'),
 ]

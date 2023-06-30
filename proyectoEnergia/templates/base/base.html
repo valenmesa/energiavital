@@ -1108,7 +1108,7 @@
 											<div class="separator my-2"></div>
 											<!--end::Menu separator-->
 											<!--begin::Menu item-->
-											<div class="menu-item px-5">
+											{% comment %} <div class="menu-item px-5">
 												<a href="account/overview.html" class="menu-link px-5">My Profile</a>
 											</div>
 											<!--end::Menu item-->
@@ -1224,18 +1224,18 @@
 											<!--begin::Menu item-->
 											<div class="menu-item px-5 my-1">
 												<a href="account/settings.html" class="menu-link px-5">Account Settings</a>
-											</div>
+											</div> {% endcomment %}
 											<!--end::Menu item-->
 											<!--begin::Menu item-->
 											<div class="menu-item px-5">
-												<a href="authentication/flows/basic/sign-in.html" class="menu-link px-5">Sign Out</a>
+												<a href="{% url 'logout' %}" class="menu-link px-5">Cerrar sesión</a>
 											</div>
 											<!--end::Menu item-->
 											<!--begin::Menu separator-->
 											<div class="separator my-2"></div>
 											<!--end::Menu separator-->
 											<!--begin::Menu item-->
-											<div class="menu-item px-5">
+											{% comment %} <div class="menu-item px-5">
 												<div class="menu-content px-5">
 													<label class="form-check form-switch form-check-custom form-check-solid pulse pulse-success" for="kt_user_menu_dark_mode_toggle">
 														<input class="form-check-input w-30px h-20px" type="checkbox" value="1" name="mode" id="kt_user_menu_dark_mode_toggle" data-kt-url="dark/index.html" />
@@ -1243,7 +1243,7 @@
 														<span class="form-check-label text-gray-600 fs-7">Dark Mode</span>
 													</label>
 												</div>
-											</div>
+											</div> {% endcomment %}
 											<!--end::Menu item-->
 										</div>
 										<!--end::User account menu-->

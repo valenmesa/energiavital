@@ -14,6 +14,7 @@ def index(request):
 class ClienteList(ListView):
     model=Cliente
     template_name='cliente/cliente_list.html'
+        paginate_by= 2
 
 #crear registro
 class ClienteCreate(CreateView):
