@@ -14,6 +14,7 @@ def index(request):
 class serviciosList(ListView):
     model=servicios
     template_name='servicios/servicios_list.html'
+    paginate_by= 2
 
 #crear registro
 class serviciosCreate(CreateView):
