@@ -7,6 +7,7 @@
         <tr>
             <td>#</td>
             <td>Descripcion</td>
+            <td>Acciones</td>
         </tr>
     </thead>
     <tbody>
@@ -20,8 +21,6 @@
                 Editar </a>
                 <a class="btn btn-danger" href="{%url 'estado_eliminar' estado.id %}">
                 Eliminar </a>
-
-
             </td>
             {% endfor%}
             {% else %}
@@ -30,6 +29,9 @@
         </tr>
     </tbody>
 </table>
+
+<a class="btn btn-primary" href="{%url 'estado_crear' %}">Agregar</a>
+
 <div class"pagination">
     <span class="step-links">
             {% if page_obj.has_previous%}

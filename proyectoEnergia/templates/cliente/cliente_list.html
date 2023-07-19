@@ -33,8 +33,6 @@
                 Editar </a>
                 <a class="btn btn-danger" href="{%url 'cliente_eliminar' cliente.id %}">
                 Eliminar </a>
-
-
             </td>
             {% endfor%}
             {% else %}
@@ -43,6 +41,9 @@
         </tr>
     </tbody>
 </table>
+
+<a class="btn btn-primary" href="{%url 'cliente_crear' %}">Agregar</a>
+
 <div class="pagination">
     <span class="step-links">
         {% if page_obj.has_previous %}

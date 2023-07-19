@@ -25,9 +25,7 @@
                     <a class="btn btn-primary" href="{%url 'servicios_editar' servicios.id %}">
                     Editar </a>
                     <a class="btn btn-danger" href="{%url 'servicios_eliminar' servicios.id %}">
-                    Eliminar </a> 
-
-
+                    Eliminar </a>
             </td>
             {% endfor%}
             {% else %}
@@ -36,6 +34,9 @@
         </tr>
     </tbody>
 </table>
+
+<a class="btn btn-primary" href="{%url 'servicios_crear' %}">Agregar</a>
+
 <div class="pagination">
     <span class="step-links">
         {% if page_obj.has_previous %}
