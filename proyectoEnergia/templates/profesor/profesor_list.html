@@ -48,7 +48,7 @@
 
 <a class="btn btn-primary" href="{%url 'profesor_crear' %}">Agregar</a>
 
-<div class="pagination">
+{% comment %} <div class="pagination">
     <span class="step-links">
         {% if page_obj.has_previous %}
         <a href="?page=1">&laquo; Primero</a>
@@ -63,6 +63,15 @@
         <a href="?page={{ page_obj.paginator.num_pages}}">Último &raquo;</a>
         {% endif %}
     </span>
-</div>
+</div> {% endcomment %}
 
+{% endblock %}
+
+{% block js_page %}
+<script>
+    //Llamamos al pluging del datatables
+    $(document).ready(function(){
+        $('.table').DataTable();
+    });
+</script>
 {% endblock %}
