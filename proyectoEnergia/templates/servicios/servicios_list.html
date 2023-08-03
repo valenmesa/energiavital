@@ -23,10 +23,14 @@
             <td>{{servicios.Descripcion_Servicio}}</td>
             <td>{{servicios.Valor_Servicio}}</td>
             <td>
-                    <a class="btn btn-primary" href="{%url 'servicios_editar' servicios.id %}">
+                    {% comment %} <a class="btn btn-primary" href="{%url 'servicios_editar' servicios.id %}">
                     Editar </a>
                     <a class="btn btn-danger" href="{%url 'servicios_eliminar' servicios.id %}">
-                    Eliminar </a>
+                    Eliminar </a> {% endcomment %}
+                    <a class="btn btn-warning btn-circle" href="{%url 'servicios_eliminar' servicios.id %}"
+                    role="button"><i class="fa fa-edit"></i></a>
+                    <a class="btn btn-danger btn-circle" href="{%url 'servicios_editar' servicios.id %}"
+                    role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
             {% endfor%}
             {% else %}
