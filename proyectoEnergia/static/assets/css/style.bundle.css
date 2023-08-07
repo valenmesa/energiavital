@@ -7682,7 +7682,7 @@ textarea.form-control-lg {
 }
 
 .h-25px {
-  height: 25px !important;
+  height: 60px !important;
 }
 
 .h-30px {
@@ -7694,9 +7694,8 @@ textarea.form-control-lg {
 }
 
 .h-40px {
-  height: 40px !important;
+  height: 8000px !important;
 }
-
 .h-45px {
   height: 45px !important;
 }
@@ -19625,11 +19624,11 @@ textarea.form-control-lg {
   }
 
   .h-lg-25px {
-    height: 25px !important;
+    height: 60px !important;
   }
 
   .h-lg-30px {
-    height: 30px !important;
+    height: 80px !important;
   }
 
   .h-lg-35px {
