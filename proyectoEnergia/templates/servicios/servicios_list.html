@@ -23,10 +23,10 @@
             <td>{{servicios.Descripcion_Servicio}}</td>
             <td>{{servicios.Valor_Servicio}}</td>
             <td>
-                    <a class="btn btn-primary" href="{%url 'servicios_editar' servicios.id %}">
-                    Editar </a>
-                    <a class="btn btn-danger" href="{%url 'servicios_eliminar' servicios.id %}">
-                    Eliminar </a>
+                <a class="btn btn-success btn-circle" href="{%url 'servicios_editar' servicios.id %}"
+                role="button"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-danger btn-circle" href="{%url 'servicios_eliminar' servicios.id %}"
+                role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
             {% endfor%}
             {% else %}
@@ -36,7 +36,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-primary" href="{%url 'servicios_crear' %}">Agregar</a>
+<a class="btn btn-success" href="{%url 'servicios_crear' %}">Agregar</a>
 
 {% comment %} <div class="pagination">
     <span class="step-links">
