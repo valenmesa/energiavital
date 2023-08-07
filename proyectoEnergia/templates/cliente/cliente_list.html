@@ -29,10 +29,10 @@
             <td>{{cliente.tipo_documento.descripcion}}</td>
             <td>{{cliente.numero_documento}}</td>
             <td>
-                <a class="btn btn-primary" href="{%url 'cliente_editar' cliente.id %}">
-                Editar </a>
-                <a class="btn btn-danger" href="{%url 'cliente_eliminar' cliente.id %}">
-                Eliminar </a>
+                <a class="btn btn-success btn-circle" href="{%url 'cliente_editar' cliente.id %}"
+                role="button"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-danger btn-circle" href="{%url 'cliente_eliminar' cliente.id %}"
+                role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
             {% endfor%}
             {% else %}
@@ -42,7 +42,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-primary" href="{%url 'cliente_crear' %}">Agregar</a>
+<a class="btn btn-success" href="{%url 'cliente_crear' %}">Agregar</a>
 
 {% comment %} <div class="pagination">
     <span class="step-links">
