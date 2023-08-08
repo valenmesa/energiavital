@@ -31,12 +31,10 @@
             <td>{{profesor.tipo_documento.descripcion}}</td>
             <td>{{profesor.numero_documento}}</td>
             <td>
-                <a class="btn btn-primary" href="{%url 'profesor_editar' profesor.id %}">
-                Editar </a>
-                <a class="btn btn-danger" href="{%url 'profesor_eliminar' profesor.id %}">
-                Eliminar si</a>
-
-
+                <a class="btn btn-success btn-circle" href="{%url 'profesor_editar' profesor.id %}"
+                role="button"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-danger btn-circle" href="{%url 'profesor_eliminar' profesor.id %}"
+                role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
             {% endfor%}
             {% else %}
@@ -46,7 +44,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-primary" href="{%url 'profesor_crear' %}">Agregar</a>
+<a class="btn btn-success" href="{%url 'profesor_crear' %}">Agregar</a>
 
 {% comment %} <div class="pagination">
     <span class="step-links">
