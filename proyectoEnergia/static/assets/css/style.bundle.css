@@ -429,7 +429,7 @@ legend + * {
 }
 
 ::-webkit-color-swatch-wrapper {
-  padding: 0;
+  padding: 100;
 }
 
 ::file-selector-button {
