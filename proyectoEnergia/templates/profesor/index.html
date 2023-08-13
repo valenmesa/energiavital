@@ -127,7 +127,7 @@
 											<!--begin::Menu item-->
 											<div class="menu-item">
 												<!--begin::Menu link-->
-												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Suscripción</a>
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Planes</a>
 												<!--end::Menu link-->
 											</div>
 											<!--end::Menu item-->
@@ -311,33 +311,8 @@
 
 							<div class="row w-100 gy-10 mb-md-20">
 						<!--begin::Col-->
-						<div class="col-md-4 px-5">
-							<!--begin::Story-->
-							<div class="text-center mb-10 mb-md-0">
-								<!--begin::Illustration-->
-								<img src="assets/media/illustrations/sketchy-1/2.png" class="mh-125px mb-9" alt="" />
-								<!--end::Illustration-->
-								<!--begin::Heading-->
-								<div class="d-flex flex-center mb-5">
-									<!--begin::Badge-->
-									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">1</span>
-									<!--end::Badge-->
-									<!--begin::Title-->
-									<div class="fs-5 fs-lg-3 fw-bolder text-white">Clases de Yoga Personalizas</div>
-									<!--end::Title-->
-								</div>
-								<!--end::Heading-->
-								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">Sesión de yoga diseñada
-								<br />específicamente para cada persona
-								<br /> con el propósito de cumplir tus objetivos personales.</div>
-								<!--end::Description-->
-							</div>
-							<!--end::Story-->
-						</div>
-						<!--end::Col-->
-						<!--begin::Col-->
-						<div class="col-md-4 px-5">
+						
+						<div class="col-md-4 px-5 loli" >
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
@@ -346,7 +321,7 @@
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
 									<!--begin::Badge-->
-									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">2</span>
+									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">1</span>
 									<!--end::Badge-->
 									<!--begin::Title-->
 									<div class="fs-5 fs-lg-3 fw-bolder text-white">Clase de yoga grupal</div>
@@ -372,7 +347,7 @@
 								<!--begin::Heading-->
 								<div class="d-flex flex-center mb-5">
 									<!--begin::Badge-->
-									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">3</span>
+									<span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">2</span>
 									<!--end::Badge-->
 									<!--begin::Title-->
 									<div class="fs-5 fs-lg-3 fw-bolder text-white">Clase de Yoga Empresarial</div>
@@ -517,10 +492,9 @@
 										<!--begin::Col-->
 										<div class="col-lg-6">
 											<!--begin::Item-->
-											<a class="d-block card-rounded h-lg-100" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-23.jpg">
+											<a class="d-block overlay card-rounded h-lg-100" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga2.jpg"%}">
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('assets/media/stock/600x600/img-23.jpg')">
-													<img src="{% static "assets/media/inicio/yoga2.jpg"%}">
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{% static "assets/media/inicio/yoga2.jpg"%}">
 												</div>
 												<!--end::Image-->
 												<!--begin::Action-->
@@ -540,13 +514,12 @@
 												<div class="col-lg-6">
 													<!--begin::Item-->
 													
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-22.jpg">
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga1.jpg"%}">
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-22.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga1.jpg"%}"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<img src="{% static "../../static/assets/media/logos/logo.png" %}" alt="Descripción de la imagen">
 															<i class="bi bi-eye-fill fs-3x text-white"></i>
 														</div>
 														<!--end::Action-->
@@ -562,9 +535,9 @@
 												<!--begin::Col-->
 												<div class="col-lg-6">
 													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x600/img-21.jpg">
+													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga3.avif"%}">
 														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-21.jpg')"></div>
+														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga3.avif"%}"></div>
 														<!--end::Image-->
 														<!--begin::Action-->
 														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -578,9 +551,9 @@
 											</div>
 											<!--end::Row-->
 											<!--begin::Item-->
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="assets/media/stock/600x400/img-20.jpg">
+											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga4.jpg"%}">
 												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('assets/media/stock/600x600/img-20.jpg')"></div>
+												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga4.jpg"%}"></div>
 												<!--end::Image-->
 												<!--begin::Action-->
 												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
@@ -890,7 +863,7 @@
 												<div class="w-100 mb-10">
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Up to 10 Active Users</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Acceso a la modalidad de clase de Yoga</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -903,7 +876,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Up to 30 Project Integrations</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Asesoramiento personalizado </span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -916,7 +889,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800">Keen Analytics Platform</span>
+														<span class="fw-bold fs-6 text-gray-800">Acceso Preferencial</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
 														<span class="svg-icon svg-icon-1">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -930,7 +903,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800">Targets Timelines &amp; Files</span>
+														<span class="fw-bold fs-6 text-gray-800">1+ Clase gratis </span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
 														<span class="svg-icon svg-icon-1">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -941,21 +914,7 @@
 														</span>
 														<!--end::Svg Icon-->
 													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack">
-														<span class="fw-bold fs-6 text-gray-800">Unlimited Projects</span>
-														<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
-														<span class="svg-icon svg-icon-1">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor" />
-																<rect x="7" y="15.3137" width="12" height="2" rx="1" transform="rotate(-45 7 15.3137)" fill="currentColor" />
-																<rect x="8.41422" y="7" width="12" height="2" rx="1" transform="rotate(45 8.41422 7)" fill="currentColor" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Item-->
+													
 												</div>
 												<!--end::Features-->
 												<!--begin::Select-->
@@ -977,7 +936,7 @@
 													<h1 class="text-white mb-5 fw-boldest">4 CLASES</h1>
 													<!--end::Title-->
 													<!--begin::Description-->
-													<div class="text-white opacity-75 fw-bold mb-5">Best Settings for Business</div>
+													<div class="text-white opacity-75 fw-bold mb-5">De la modalidad de yoga que desees</div>
 													<!--end::Description-->
 													<!--begin::Price-->
 													<div class="text-center">
@@ -992,7 +951,7 @@
 												<div class="w-100 mb-10">
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Up to 10 Active Users</span>
+														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Acceso a la modalidad de clase de Yoga</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-white">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1005,7 +964,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Up to 30 Project Integrations</span>
+														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Asesoramiento personalizado</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-white">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1018,7 +977,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Keen Analytics Platform</span>
+														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Acceso Preferencial</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-white">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1028,23 +987,10 @@
 														</span>
 														<!--end::Svg Icon-->
 													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-white opacity-75 text-start pe-3">Targets Timelines &amp; Files</span>
-														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-														<span class="svg-icon svg-icon-1 svg-icon-white">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor" />
-																<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="currentColor" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Item-->
+												
 													<!--begin::Item-->
 													<div class="d-flex flex-stack">
-														<span class="fw-bold fs-6 text-white opacity-75">Unlimited Projects</span>
+														<span class="fw-bold fs-6 text-white opacity-75">1+ Clase gratis</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen040.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-white">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1077,7 +1023,7 @@
 													<h1 class="text-dark mb-5 fw-boldest">8 CLASES</h1>
 													<!--end::Title-->
 													<!--begin::Description-->
-													<div class="text-gray-400 fw-bold mb-5">Best Settings for Enterprise</div>
+													<div class="text-gray-400 fw-bold mb-5">De la modalidad de yoga que desees</div>
 													<!--end::Description-->
 													<!--begin::Price-->
 													<div class="text-center">
@@ -1092,7 +1038,7 @@
 												<div class="w-100 mb-10">
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Up to 10 Active Users</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Acceso a la modalidad de clase de Yoga</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1105,7 +1051,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Up to 30 Project Integrations</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Asesoramiento personalizado</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1118,7 +1064,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Keen Analytics Platform</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Acceso Preferencial</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1131,7 +1077,7 @@
 													<!--end::Item-->
 													<!--begin::Item-->
 													<div class="d-flex flex-stack mb-5">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Targets Timelines &amp; Files</span>
+														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">1+ Clase gratis</span>
 														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
 														<span class="svg-icon svg-icon-1 svg-icon-success">
 															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1141,20 +1087,7 @@
 														</span>
 														<!--end::Svg Icon-->
 													</div>
-													<!--end::Item-->
-													<!--begin::Item-->
-													<div class="d-flex flex-stack">
-														<span class="fw-bold fs-6 text-gray-800 text-start pe-3">Unlimited Projects</span>
-														<!--begin::Svg Icon | path: icons/duotune/general/gen043.svg-->
-														<span class="svg-icon svg-icon-1 svg-icon-success">
-															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="currentColor" />
-																<path d="M10.4343 12.4343L8.75 10.75C8.33579 10.3358 7.66421 10.3358 7.25 10.75C6.83579 11.1642 6.83579 11.8358 7.25 12.25L10.2929 15.2929C10.6834 15.6834 11.3166 15.6834 11.7071 15.2929L17.25 9.75C17.6642 9.33579 17.6642 8.66421 17.25 8.25C16.8358 7.83579 16.1642 7.83579 15.75 8.25L11.5657 12.4343C11.2533 12.7467 10.7467 12.7467 10.4343 12.4343Z" fill="currentColor" />
-															</svg>
-														</span>
-														<!--end::Svg Icon-->
-													</div>
-													<!--end::Item-->
+													
 												</div>
 												<!--end::Features-->
 												<!--begin::Select-->
@@ -1224,11 +1157,10 @@
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template 
-									<br />and the most well structured</div>
+									<div class="fs-2 fw-bolder text-dark mb-3">Energia vital es una empresa muy cumplida!.</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
-									<div class="text-gray-500 fw-bold fs-4">Energia vital es una empresa muy cumplida!.
+									<div class="text-gray-500 fw-bold fs-4">
 										El instructor Alvaro es alguien capaz, sincero y muy bueno haciendo su trabajo, fui sometido a una sesion de Yoga y sali satisfecho.
 										</div>
 									<!--end::Feedback-->
@@ -1279,8 +1211,8 @@
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template 
-									<br />and the most well structured</div>
+									<div class="fs-2 fw-bolder text-dark mb-3">Una experiencia inolvidable y asombrosa 
+									</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
 									<div class="text-gray-500 fw-bold fs-4">Tuve una sesion personalizada de Yoga con Alvaro, pudo guiarme correctamente a ejecutar bien unas tecnicas y posiciones de las cuales estaba sufriendo problemas por
@@ -1334,8 +1266,8 @@
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">This is by far the cleanest template 
-									<br />and the most well structured</div>
+									<div class="fs-2 fw-bolder text-dark mb-3">Un profesor excelente, transmision de sus conocimientos de manera asombrosa
+									</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
 									<div class="text-gray-500 fw-bold fs-4">Recomiendo completamente sus servicios como  el yoga. Alvaro como profesor tiene un conocimiento muy amplio del tema,
