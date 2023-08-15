@@ -3,7 +3,10 @@
 {%block content%}
 
 <h1>Profesor</h1>
-
+<div>
+    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'profesor_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square"></i>Nueva</a>
+</div>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -44,7 +47,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-success" href="{%url 'profesor_crear' %}">Agregar</a>
+{% comment %} <a class="btn btn-success" href="{%url 'profesor_crear' %}">Agregar</a> {% endcomment %}
 
 {% endblock %}
 
@@ -55,4 +58,5 @@
         $('.table').DataTable();
     });
 </script>
+
 {% endblock %}
