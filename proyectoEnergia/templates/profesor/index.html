@@ -159,7 +159,7 @@
 							</span></h1>
 							<!--end::Title-->
 							<!--begin::Action-->
-							<a href="index.html" class="btn btn-primary">Programa tu clase</a>
+							<a href="#pricing" class="btn btn-primary">Programa tu clase</a>
 							<!--end::Action-->
 						</div>
 						<!--end::Heading-->
@@ -311,8 +311,9 @@
 
 							<div class="row w-100 gy-10 mb-md-20">
 						<!--begin::Col-->
-						
-						<div class="col-md-4 px-5 loli" >
+						<div class="col-md-1 px-5">
+						</div>
+						<div class="col-md-5 px-5 loli" >
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
@@ -329,16 +330,22 @@
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">Sesión en la que varias personas
-									<br />	practican yoga juntas,
-								<br />para promover la conexión con los demás y fomentar la motivación mutua.</div>
+								<div class="fw-bold fs-6 fs-lg-4 text-muted">
+									Disfruta de una sesión de yoga grupal que te guiará a través de suaves movimientos, posturas y técnicas de respiración para mejorar tu flexibilidad, fortaleza y equilibrio. Ven a relajar tu mente y rejuvenecer tu cuerpo mientras te conectas con otros entusiastas del yoga en un ambiente acogedor y amigable.
+									{% comment %} Sesión en la que varias personas
+									<br />	practican yoga juntas, para
+								<br />promover la conexión con los demás
+								<br /> y fomentar la motivación mutua. {% endcomment %}
+							</div>
 								<!--end::Description-->
 							</div>
 							<!--end::Story-->
 						</div>
 						<!--end::Col-->
+						<div class="col-md-1 px-5">
+						</div>
 						<!--begin::Col-->
-						<div class="col-md-4 px-5">
+						<div class="col-md-5 px-5">
 							<!--begin::Story-->
 							<div class="text-center mb-10 mb-md-0">
 								<!--begin::Illustration-->
@@ -355,9 +362,14 @@
 								</div>
 								<!--end::Heading-->
 								<!--begin::Description-->
-								<div class="fw-bold fs-6 fs-lg-4 text-muted">El objetivo principal es promover
-									<br /> la salud, el bienestar y la relajación de los empleados, aliviando el estrés,
-									<br />para fomentar un ambiente de trabajo más equilibrado y productivo.</div>
+								<div class="fw-bold fs-6 fs-lg-4 text-muted"> 
+									Nuestra clase de yoga empresarial te ofrece una pausa revitalizante en tu día de trabajo. A través de posturas suaves y ejercicios de respiración, esta sesión de yoga está diseñada para aliviar el estrés, mejorar la concentración y promover el bienestar general. Esta clase ayudará a que los empleados recarguen energías y enfrentar los desafíos laborales con calma y claridad mental.
+									{% comment %} El objetivo principal es promover
+									<br /> la salud, el bienestar y la relajación 
+									<br />de los empleados, aliviando el estrés,
+									<br />para fomentar un ambiente de trabajo 
+									<br />más equilibrado y productivo. {% endcomment %}
+								</div>
 								<!--end::Description-->
 							</div>
 							<!--end::Story-->
@@ -401,7 +413,7 @@
 							<!--begin::Item-->
 							<div class="text-center">
 								<!--begin::Photo-->
-								<div class="octagon mx-auto mb-5 d-flex w-200px h-200px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-1.jpg')"></div>
+								<div class="octagon mx-auto mb-5 d-flex w-300px h-300px bgi-no-repeat bgi-size-contain bgi-position-center" style="background-image:url('assets/media/avatars/300-1.jpg')"> <img src="{% static "assets/media/inicio/Alvaro.jpg"%}" class="" alt="" /></div>
 								<!--end::Photo-->
 								<!--begin::Person-->
 								<div class="mb-0">
@@ -1135,6 +1147,21 @@
 						<div class="col-lg-4">
 							<!--begin::Testimonial-->
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="{% static "assets/media/avatars/300-6.jpg"%}" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Clara Lopez</a>
+										{% comment %} <span class="text-muted d-block fw-bold">Development Lead</span> {% endcomment %}
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
 								<!--begin::Wrapper-->
 								<div class="mb-7">
 									<!--begin::Rating-->
@@ -1161,26 +1188,11 @@
 									<!--end::Title-->
 									<!--begin::Feedback-->
 									<div class="text-gray-500 fw-bold fs-4">
-										El instructor Alvaro es alguien capaz, sincero y muy bueno haciendo su trabajo, fui sometido a una sesion de Yoga y sali satisfecho.
+										Me encantan tus clases porque me aportan energía, vitalidad, fuerza, elasticidad, resistencia, calma….es un cóctel de cosas buenas que aprendo y que me ayudan a estar mejor conmigo misma, y por lo tanto, con los demás. El instructor Alvaro es alguien capaz, sincero y muy bueno haciendo su trabajo.
 										</div>
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
-								<!--begin::Author-->
-								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-1.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
-									<!--begin::Name-->
-									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Paul Miles</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
-									</div>
-									<!--end::Name-->
-								</div>
-								<!--end::Author-->
 							</div>
 							<!--end::Testimonial-->
 						</div>
@@ -1189,6 +1201,21 @@
 						<div class="col-lg-4">
 							<!--begin::Testimonial-->
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="{% static "assets/media/avatars/300-1.jpg"%}" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Carlos Bustamante</a>
+										{% comment %} <span class="text-muted d-block fw-bold">Development Lead</span> {% endcomment %}
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
 								<!--begin::Wrapper-->
 								<div class="mb-7">
 									<!--begin::Rating-->
@@ -1211,31 +1238,15 @@
 									</div>
 									<!--end::Rating-->
 									<!--begin::Title-->
-									<div class="fs-2 fw-bolder text-dark mb-3">Una experiencia inolvidable y asombrosa 
+									<div class="fs-2 fw-bolder text-dark mb-3">Una experiencia inolvidable y asombrosa
 									</div>
 									<!--end::Title-->
 									<!--begin::Feedback-->
-									<div class="text-gray-500 fw-bold fs-4">Tuve una sesion personalizada de Yoga con Alvaro, pudo guiarme correctamente a ejecutar bien unas tecnicas y posiciones de las cuales estaba sufriendo problemas por
-										mi mala ejecucion, Fue muy ameno en cuanto a su explicacion, clara y concisa y me ayudo en todas mis debilidades para no seguir cometiendo errroes
+									<div class="text-gray-500 fw-bold fs-4">En la clase de Yoga, Alvaro pudo guiarme correctamente a ejecutar bien unas tecnicas y posiciones de las cuales estaba sufriendo problemas por mi mala ejecucion, Fue muy ameno en cuanto a su explicacion, clara y concisa y me ayudo en todas mis debilidades para no seguir cometiendo errores
 										</div>
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
-								<!--begin::Author-->
-								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-2.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
-									<!--begin::Name-->
-									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Janya Clebert</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
-									</div>
-									<!--end::Name-->
-								</div>
-								<!--end::Author-->
 							</div>
 							<!--end::Testimonial-->
 						</div>
@@ -1244,6 +1255,21 @@
 						<div class="col-lg-4">
 							<!--begin::Testimonial-->
 							<div class="d-flex flex-column justify-content-between h-lg-100 px-10 px-lg-0 pe-lg-10 mb-15 mb-lg-0">
+								<!--begin::Author-->
+								<div class="d-flex align-items-center">
+									<!--begin::Avatar-->
+									<div class="symbol symbol-circle symbol-50px me-5">
+										<img src="{% static "assets/media/avatars/300-12.jpg"%}" class="" alt="" />
+									</div>
+									<!--end::Avatar-->
+									<!--begin::Name-->
+									<div class="flex-grow-1">
+										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Juliana Castrillon</a>
+										{% comment %} <span class="text-muted d-block fw-bold">Development Lead</span> {% endcomment %}
+									</div>
+									<!--end::Name-->
+								</div>
+								<!--end::Author-->
 								<!--begin::Wrapper-->
 								<div class="mb-7">
 									<!--begin::Rating-->
@@ -1276,21 +1302,6 @@
 									<!--end::Feedback-->
 								</div>
 								<!--end::Wrapper-->
-								<!--begin::Author-->
-								<div class="d-flex align-items-center">
-									<!--begin::Avatar-->
-									<div class="symbol symbol-circle symbol-50px me-5">
-										<img src="assets/media/avatars/300-16.jpg" class="" alt="" />
-									</div>
-									<!--end::Avatar-->
-									<!--begin::Name-->
-									<div class="flex-grow-1">
-										<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Steave Brown</a>
-										<span class="text-muted d-block fw-bold">Development Lead</span>
-									</div>
-									<!--end::Name-->
-								</div>
-								<!--end::Author-->
 							</div>
 							<!--end::Testimonial-->
 						</div>
