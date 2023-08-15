@@ -14,7 +14,6 @@ def index(request):
 class ProfesorList(ListView):
     model=Profesor
     template_name='profesor/profesor_list.html'
-    paginate_by= 2
 
 #crear registro
 class ProfesorCreate(CreateView):

@@ -2106,6 +2106,10 @@
 		</div>
 		<!--end::Modal - Upgrade plan-->
 		<!--begin::Modal - Create App-->
+		{% comment %} pepita {% endcomment %}
+		<div class="modal" id="popup" >
+
+		</div>
 		<div class="modal fade" id="kt_modal_create_app" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
 			<div class="modal-dialog modal-dialog-centered mw-900px">
@@ -4212,8 +4216,29 @@
 
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+		{% block control_modal%}
+		<script>
+			function abrir_modal(url)
+			{
+				$("#popup").load(url, function(){
+					$(this).modal({
+						backdrop: 'static',
+						keyboard: false
+					})
+					$(this).modal("show");
+				});
+				return false;
+			}
+			function cerrar_modal(url)
+			{
+				$("#popup").modal('hide');
+				return false;
+			};
+		</script>
+		{% endblock %}
 	</body>
 	<!--end::Body-->
 
 <!-- Mirrored from preview.keenthemes.com/metronic8/demo1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Jun 2022 16:37:49 GMT -->
 </html>
+
