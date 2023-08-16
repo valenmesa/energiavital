@@ -15,7 +15,7 @@ class Profesor(models.Model):
     apellido_profesor=models.CharField(max_length=70)
     telefono_profesor=models.CharField(max_length=15)
     email_profesor=models.EmailField()
-    direccion_profesor=models.TextField()
+    direccion_profesor=models.CharField(max_length=40)
     tipo_documento=models.ForeignKey(Tipo_Documento, null=True, blank=True, on_delete=models.CASCADE)
     numero_documento=models.BigIntegerField()
     def __str__(self):
