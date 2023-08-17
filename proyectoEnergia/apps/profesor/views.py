@@ -19,6 +19,7 @@ class ProfesorList(ListView):
 class ProfesorCreate(CreateView):
     model=Profesor
     form_class= ProfesorForm
+    context_object_name="obj"
     template_name='profesor/profesor_form.html'
     success_url= reverse_lazy('profesor_listar')
 
@@ -27,6 +28,7 @@ class ProfesorEdit(UpdateView):
     model=Profesor
     form_class= ProfesorForm
     template_name='profesor/profesor_form.html'
+    context_object_name="obj"
     success_url= reverse_lazy('profesor_listar')
 
 # Eliminar registro
