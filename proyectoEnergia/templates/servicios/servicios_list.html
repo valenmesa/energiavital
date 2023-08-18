@@ -4,6 +4,11 @@
 
 <h1>Servicios</h1>
 
+<div>
+    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'servicios_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square"></i>Nueva</a>
+</div>
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -23,8 +28,9 @@
             <td>{{servicios.Descripcion_Servicio}}</td>
             <td>{{servicios.Valor_Servicio}}</td>
             <td>
-                <a class="btn btn-success btn-circle" href="{%url 'servicios_editar' servicios.id %}"
+                <a class="btn btn-success btn-circle" onclick="return abrir_modal('{%url 'servicios_editar' servicios.id %}')" href="#"
                 role="button"><i class="fa fa-edit"></i></a>
+
                 <a class="btn btn-danger btn-circle" href="{%url 'servicios_eliminar' servicios.id %}"
                 role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
@@ -36,7 +42,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-success" href="{%url 'servicios_crear' %}">Agregar</a>
+{% comment %} <a class="btn btn-success" href="{%url 'servicios_crear' %}">Agregar</a> {% endcomment %}
 
 {% endblock %}
 
