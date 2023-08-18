@@ -2,6 +2,12 @@
 
 {%block content%}
 <h1>Cliente</h1>
+
+<div>
+    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'cliente_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square"></i>Nueva</a>
+</div>
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -28,12 +34,15 @@
             <td>{{cliente.direccion_cliente}}</td>
             <td>{{cliente.tipo_documento.descripcion}}</td>
             <td>{{cliente.numero_documento}}</td>
+
             <td>
-                <a class="btn btn-success btn-circle" href="{%url 'cliente_editar' cliente.id %}"
+                <a class="btn btn-success btn-circle" onclick="return abrir_modal('{%url 'cliente_editar' cliente.id %}')" href="#"
                 role="button"><i class="fa fa-edit"></i></a>
-                <a class="btn btn-danger btn-circle" href="{%url 'cliente_eliminar' cliente.id %}"
+
+                <a class="btn btn-danger btn-circle" href="{%url 'profesor_eliminar' cliente.id %}"
                 role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
+
             {% endfor%}
             {% else %}
             <h1>No hay registros de clientes</h1>
@@ -42,7 +51,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-success" href="{%url 'cliente_crear' %}">Agregar</a>
+{% comment %} <a class="btn btn-success" href="{%url 'cliente_crear' %}">Agregar</a> {% endcomment %}
 
 {% endblock %}
 
