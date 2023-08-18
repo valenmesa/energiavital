@@ -2,6 +2,9 @@
 
 {%block content%}
 <h1>Estado</h1>
+<a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'estado_crear' %}')" href="#"
+role="button"><i class="fa fa-plus-square"></i>Nueva</a>
+</div>
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -17,8 +20,9 @@
             <td>{{estado.id}}</td>
             <td>{{estado.descripcion_estado}}</td>
             <td>
-                <a class="btn btn-success btn-circle" href="{%url 'estado_editar' estado.id %}"
+                <a class="btn btn-success btn-circle" onclick="return abrir_modal('{%url 'estado_editar' estado.id %}')" href="#"
                 role="button"><i class="fa fa-edit"></i></a>
+
                 <a class="btn btn-danger btn-circle" href="{%url 'estado_eliminar' estado.id %}"
                 role="button"><i class="fa fa-trash-alt"></i></a>
             </td>
@@ -30,7 +34,7 @@
     </tbody>
 </table>
 
-<a class="btn btn-success" href="{%url 'estado_crear' %}">Agregar</a>
+{% comment %} <a class="btn btn-success" href="{%url 'estado_crear' %}">Agregar</a> {% endcomment %}
 
 {% endblock %}
 
