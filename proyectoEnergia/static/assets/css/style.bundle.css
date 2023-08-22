@@ -30694,7 +30694,7 @@ textarea.form-control-lg {
 }
 :root {
   --bs-light-primary:#F1FAFF;
-  --bs-active-primary:#9ce9de;
+  --bs-active-primary:#00986c;
   --bs-light-success:#E8FFF3;
   --bs-active-success:#47BE7D;
   --bs-light-info:#F8F5FF;
@@ -30790,11 +30790,11 @@ textarea.form-control-lg {
 }
 
 .bg-primary {
-  background-color: #008259 !important;
+  background-color: #00986c !important;
   --bg-color: 0, 158, 247 !important;
 }
 .bg-primary.hoverable:hover {
-  background-color: #9ce9de !important;
+  background-color: #00986c !important;
 }
 
 .bg-hover-light-primary {
@@ -31296,8 +31296,8 @@ textarea.form-control-lg {
 }
 
 .bg-body {
-  --bg-color: 255, 255, 255;
-  background-color: #ffffff;
+  --bg-color: 0, 141, 98;
+  background-color: #008d62;
 }
 
 .bg-lighten {
@@ -35644,7 +35644,7 @@ a:hover {
 }
 /*letras del menu*/
 .menu-title-gray-500 .menu-item .menu-link {
-  color: #9ce9de;
+  color: #00986c;
 }
 .menu-title-gray-500 .menu-item .menu-link .menu-title {
   color: #A1A5B7;
@@ -37561,8 +37561,8 @@ a:hover {
 }
 .btn-check:checked + .btn.btn-primary, .btn-check:active + .btn.btn-primary, .btn.btn-primary:focus:not(.btn-active), .btn.btn-primary:hover:not(.btn-active), .btn.btn-primary:active:not(.btn-active), .btn.btn-primary.active, .btn.btn-primary.show, .show > .btn.btn-primary {
   color: #FFFFFF;
-  border-color: #9ce9de;
-  background-color: #9ce9de !important;
+  border-color: #00986c;
+  background-color: #00986c !important;
 }
 .btn-check:checked + .btn.btn-primary i,
 .btn-check:checked + .btn.btn-primary .svg-icon, .btn-check:active + .btn.btn-primary i,
@@ -47396,7 +47396,7 @@ label.rating-label:hover ~ .rating-label > i, label.rating-label:hover ~ .rating
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: #00482E ;
+  background-color: #ffffff ;
 }
 .landing-header .logo-default {
   display: block;
@@ -48463,5 +48463,26 @@ body {
   border: 0;
 }
 .grisesito{
-  color: #DBDBDB;
+  color: #969696;
+}
+.grisesito-2{
+  color: #DDDDDD;
+  font-weight: bold;
+  font-size: 1.125rem; /* Ajusta el tamaño de fuente según tus necesidades */
+  line-height: 1.5; /* Agrega interlineado */
+  text-align: justify; /* Justifica el texto */
+
+
+}
+.custom-carousel {
+  width: 100vw;
+  overflow: hidden;
+  position: relative; /* Necesario para posicionar las imágenes internamente */
+}
+
+.custom-carousel img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 100px); /* Ajusta este valor según tus necesidades */
+  object-fit: cover;
 }
