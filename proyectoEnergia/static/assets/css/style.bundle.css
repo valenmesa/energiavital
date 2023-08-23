@@ -42,7 +42,7 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 24, 28, 50;
-  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-body-bg-rgb: 255, 0, 0;
   --bs-font-sans-serif: Poppins, Helvetica, "sans-serif";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -51,7 +51,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #181C32;
-  --bs-body-bg: #ffffff;
+  --bs-body-bg: red;
 }
 
 *,
@@ -31296,8 +31296,8 @@ textarea.form-control-lg {
 }
 
 .bg-body {
-  --bg-color: 0, 141, 98;
-  background-color: red;
+  --bg-color: 255, 0, 0;
+  background-color: #FF0000;
 }
 
 .bg-lighten {
@@ -48485,4 +48485,18 @@ body {
   height: auto;
   max-height: calc(100vh - 100px); /* Ajusta este valor según tus necesidades */
   object-fit: cover;
+}
+.w-lg-650px {
+  position: relative;
+}
+.enlaces-bloque {
+  /* Estilos para el bloque de enlaces */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
 }

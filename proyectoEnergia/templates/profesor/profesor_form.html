@@ -42,8 +42,9 @@
             </div>
             <div class="dropdown-diviser">
             </div>
-            <div class="row">
-                <div class="col-10">
+            <div class="row col-10">
+                {{form.as_p}}
+                {% comment %} <div class="col-10">
                     <div class="input-group">
                         <input type="text" name="nombre_profesor" maxlength="50" class="form-control" required id="id_nombre_profesor"
                         placeholder="Nombre" value="{%if obj%}  {{ obj.nombre_profesor}} {% endif%}">
@@ -89,7 +90,7 @@
                     <label for="id_numero_documento">Numero de documento:</label>
                     <input type="number" name="numero_documento" min="-9223372036854775808" max="9223372036854775807" required="" id="id_numero_documento">
                 </div>
-                </div>
+                </div> {% endcomment %}
             </div>
             <div class="dropdown-diviser">
             </div>
