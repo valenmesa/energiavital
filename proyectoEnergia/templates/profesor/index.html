@@ -96,12 +96,12 @@
 												<!--end::Menu link-->
 											</div>
 											<!--end::Menu item-->
-											<!--begin::Menu item-->
 											<div class="menu-item">
 												<!--begin::Menu link-->
-												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Quienes somos</a>
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Planes</a>
 												<!--end::Menu link-->
 											</div>
+											<!--begin::Menu item-->
 											<!--end::Menu item-->
 											<!--begin::Menu item-->
 											<div class="menu-item">
@@ -116,20 +116,14 @@
 												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#team" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Profesores</a>
 												<!--end::Menu link-->
 											</div>
-											<!--end::Menu item-->
-											<!--begin::Menu item-->
+											
 											<div class="menu-item">
 												<!--begin::Menu link-->
-												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#portfolio" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Multimedia</a>
+												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Quienes somos</a>
 												<!--end::Menu link-->
 											</div>
 											<!--end::Menu item-->
 											<!--begin::Menu item-->
-											<div class="menu-item">
-												<!--begin::Menu link-->
-												<a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#pricing" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Planes</a>
-												<!--end::Menu link-->
-											</div>
 											<!--end::Menu item-->
 										</div>
 										<!--end::Menu-->
@@ -152,7 +146,8 @@
 						<div class="carousel-indicators">
 							<h1 class="text-white lh-base fw-bolder fs-2x fs-lg-3x mb-15">Yoga
 								<br />
-								<span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">
+								{% comment %} <span style="background: linear-gradient(to right, #12CE5D 0%, #FFD80C 100%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;"> {% endcomment %}
+								<span style="color: #ffffff">
 									<span id="kt_landing_hero_text">para el alma</span>
 								</span></h1>
 								<div class="text-center mb-5 mb-lg-10 py-10 py-lg-20">
@@ -161,6 +156,8 @@
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                             </div>
                             <div class="custom-carousel">
 								<div class="carousel-inner">
@@ -171,7 +168,13 @@
 									<img src="{% static "assets/media/inicio/yoga1.jpg"%}" class="d-block" alt="...">
 								  </div>
 								  <div class="carousel-item">
-									<img src="{% static "assets/media/inicio/yoga1.jpg"%}" class="d-block" alt="...">
+									<img src="{% static "assets/media/inicio/yoga6.jpg"%}" class="d-block" alt="...">
+								  </div>
+								  <div class="carousel-item">
+									<img src="{% static "assets/media/inicio/yoga7.jpg"%}" class="d-block" alt="...">
+								  </div>
+								  <div class="carousel-item">
+									<img src="{% static "assets/media/inicio/yoga3.avif"%}" class="d-block" alt="...">
 								  </div>
 								</div>
 							  </div>
@@ -189,11 +192,11 @@
 				</div>
 				<!--end::Wrapper-->
 				<!--begin::Curve bottom-->
-				<div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+				{% comment %} <div class="landing-curve landing-dark-color mb-10 mb-lg-20">
 					<svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
 					</svg>
-				</div>
+				</div> {% endcomment %}
 				<!--end::Curve bottom-->
 			</div>
 			<!--end::Header Section-->
@@ -682,198 +685,7 @@
 			</div>
 			<!--end::Team Section-->
 			<!--begin::Projects Section-->
-			<div class="mb-lg-n15 position-relative z-index-2">
-				<!--begin::Container-->
-				<div class="container">
-					<!--begin::Card-->
-					<div class="card" style="filter: drop-shadow(0px 0px 40px rgba(68, 81, 96, 0.08))">
-						<!--begin::Card body-->
-						<div class="card-body p-lg-20">
-							<!--begin::Heading-->
-							<div class="text-center mb-5 mb-lg-10">
-								<!--begin::Title-->
-								<h3 class="fs-2hx text-dark mb-5" id="portfolio" data-kt-scroll-offset="{default: 100, lg: 150}">Multimedia</h3>
-								<!--end::Title-->
-							</div>
-							<!--end::Heading-->
-							<!--begin::Tabs wrapper-->
-							{% comment %} <div class="d-flex flex-center mb-5 mb-lg-15">
-								<!--begin::Tabs-->
-								<ul class="nav border-transparent flex-center fs-5 fw-bold">
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6 active" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_latest">Latest</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_web_design">Web Design</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_mobile_apps">Mobile Apps</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link text-gray-500 text-active-primary px-3 px-lg-6" href="#" data-bs-toggle="tab" data-bs-target="#kt_landing_projects_development">Development</a>
-									</li>
-								</ul>
-								<!--end::Tabs-->
-							</div> {% endcomment %}
-							<!--end::Tabs wrapper-->
-							<!--begin::Tabs content-->
-							<div class="tab-content">
-								<!--begin::Tab pane-->
-								<div class="tab-pane fade show active" id="kt_landing_projects_latest">
-									<!--begin::Row-->
-									<div class="row g-10">
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Item-->
-											<a class="d-block overlay card-rounded h-lg-100" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga2.jpg"%}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{% static "assets/media/inicio/yoga2.jpg"%}">
-												</div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Row-->
-											<div class="row g-10 mb-10">
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga1.jpg"%}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga1.jpg"%}"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													{% comment %} 
-													logostipo
-													"../../static/assets/media/logos/logo.png"
-													"{% static 'assets/media/logos/logo.svg' %}"
-													 {% endcomment %}
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga3.avif"%}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga3.avif"%}"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga4.jpg"%}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga4.jpg"%}"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-								</div>
-								<!--end::Tab pane-->
-								<!--begin::Tab pane-->
-								<div class="tab-pane fade" id="kt_landing_projects_web_design">
-									<!--begin::Row-->
-									<div class="row g-10">
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Item-->
-											<a class="d-block card-rounded overlay h-lg-100" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga5.jpg"%}">
-												<!--begin::Image-->
-												<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-lg-100 min-h-250px" style="background-image:url('{% static "assets/media/inicio/yoga5.jpg"%}"></div>
-												<!--end::Image-->
-												<!--begin::Action-->
-												<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-													<i class="bi bi-eye-fill fs-3x text-white"></i>
-												</div>
-												<!--end::Action-->
-											</a>
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
-										<div class="col-lg-6">
-											<!--begin::Row-->
-											<div class="row g-10 mb-10">
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga6.jpg"%}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga6.jpg"%}"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-lg-6">
-													<!--begin::Item-->
-													<a class="d-block card-rounded overlay" data-fslightbox="lightbox-projects" href="{% static "assets/media/inicio/yoga7.jpg"%}">
-														<!--begin::Image-->
-														<div class="overlay-wrapper bgi-no-repeat bgi-position-center bgi-size-cover card-rounded h-250px" style="background-image:url('{% static "assets/media/inicio/yoga7.jpg"%}"></div>
-														<!--end::Image-->
-														<!--begin::Action-->
-														<div class="overlay-layer card-rounded bg-dark bg-opacity-25">
-															<i class="bi bi-eye-fill fs-3x text-white"></i>
-														</div>
-														<!--end::Action-->
-													</a>
-													<!--end::Item-->
-												</div>
-												<!--end::Col-->
-											</div>
-											
-											<!--end::Item-->
-										</div>
-										<!--end::Col-->
-									</div>
-									<!--end::Row-->
-								</div>
-							</div>
-							<!--end::Tabs content-->
-						</div>
-						<!--end::Card body-->
-					</div>
-					<!--end::Card-->
-				</div>
-				<!--end::Container-->
-			</div>
+			
 			<!--end::Projects Section-->
 			<!--begin::Pricing Section-->
 			<div class="mt-sm-n20">
