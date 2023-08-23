@@ -31297,7 +31297,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bg-color: 0, 141, 98;
-  background-color: #008d62;
+  background-color: red;
 }
 
 .bg-lighten {
