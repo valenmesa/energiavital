@@ -403,8 +403,10 @@
 						<!--begin::Mixed Widget 7-->
 						<div class="card card-xl-stretch-50 mb-5 mb-xl-8"  >
 							<!--begin::Body-->
-							<div class="card-body d-flex flex-column p-0" >
+							<div class="card-body d-flex flex-column p-2" >
 								<!--begin::Stats-->
+								{% block content %}
+								{% endblock %}
 								<div class="flex-grow-1 card-p pb-0">
 									<div class="d-flex flex-stack flex-wrap">
 										{% block content %}
