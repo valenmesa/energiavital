@@ -43,7 +43,53 @@
             <div class="dropdown-diviser">
             </div>
             <div class="row">
-                {{form.as_p}}
+                <div class="col-10">
+                    <div class="input-group">
+                        <input type="text" name="nombre_profesor" maxlength="50" class="form-control" required id="id_nombre_profesor"
+                        placeholder="Nombre" value="{%if obj%}  {{ obj.nombre_profesor}} {% endif%}">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                        <input type="text" name="apellido_profesor" maxlength="70"  class="form-control" required id="id_apellido_profesor"
+                        placeholder="Apellido" value="{%if obj%}  {{ obj.apellido_profesor}} {% endif%}">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                        <input type="text" name="telefono_profesor" maxlength="15" class="form-control" required id="id_telefono_profesor"
+                        placeholder="Telefono" value="{%if obj%}  {{ obj.telefono_profesor}} {% endif%}">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                    <label for="id_email_profesor">Email:</label>
+                    <input type="email" name="email_profesor" maxlength="254" required="" id="id_email_profesor">
+                    </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                    <label for="id_direccion_profesor">Direccion:</label>
+                    <input type="text" name="direccion_profesor" maxlength="40" required="" id="id_direccion_profesor">
+                </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                <label for="id_tipo_documento">Tipo de documento:</label>
+                <select name="tipo_documento" id="id_tipo_documento">
+                <option value="" selected="">---------</option>
+                <option value="1">Cedula</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Tarjeta de identidad</option>
+                </select>
+                </div>
+                </div>
+                <div class="col-10">
+                    <div class="input-group">
+                    <label for="id_numero_documento">Numero de documento:</label>
+                    <input type="number" name="numero_documento" min="-9223372036854775808" max="9223372036854775807" required="" id="id_numero_documento">
+                </div>
+                </div>
             </div>
             <div class="dropdown-diviser">
             </div>

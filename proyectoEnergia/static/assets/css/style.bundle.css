@@ -47558,7 +47558,7 @@ body {
   }
   .aside-enabled.aside-fixed .wrapper {
     transition: padding-left 0.3s ease;
-    padding-left: 265px;
+    padding-left: 200px;
   }
   .aside-enabled.aside-fixed[data-kt-aside-minimize=on] .wrapper {
     transition: padding-left 0.3s ease;
@@ -47772,7 +47772,7 @@ body {
 
 @media (min-width: 992px) {
   .aside {
-    width: 265px;
+    width: 200px;
     transition: width 0.3s ease;
   }
   .aside .aside-logo {
@@ -47809,7 +47809,7 @@ body {
   }
   [data-kt-aside-minimize=on] .aside.aside-hoverable:hover:not(.animating) {
     transition: width 0.3s ease;
-    width: 265px;
+    width: 200px;
     box-shadow: 5px 0px 10px rgba(70, 78, 95, 0.075);
   }
   [data-kt-aside-minimize=on] .aside:not(.aside-hoverable) .aside-logo, [data-kt-aside-minimize=on] .aside:not(:hover) .aside-logo {
