@@ -1,70 +1,131 @@
-<div class="modal-dialog modal-lg">
+<div class="modal-dialog ">
     <div class="modal-content">
-        <!--begin::Modal header--> 
-        <div class="modal-header"> 
-            <!--begin::Modal title--> 
-            <h2>Agregar Profesor</h2> 
-                <!--end::Modal title--> 
-                    <!--begin::Close--> 
-                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal"> 
-                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg--> 
-                    <span class="svg-icon svg-icon-1"> 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> 
-                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" /> 
-                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" /> 
-                        </svg> 
+        <!--begin::Modal header-->
+        <div class="modal-header">
+            <!--begin::Modal title-->
+            <h2>Agregar Profesor</h2>
+                <!--end::Modal title-->
+                    <!--begin::Close-->
+                    <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+                            <rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+                        </svg>
                     </span>
-                    <!--end::Svg Icon--> 
-                    </div> 
-                    <!--end::Close--> 
+                    <!--end::Svg Icon-->
                     </div>
-                    <!--end::Modal header--> 
-                    <!--begin::Modal body--> 
-                    <div class="modal-body py-lg-10 px-lg-10"> 
-                        <!--begin::Stepper--> 
-                        <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper"> 
-                            <!--begin::Aside--> 
-                            <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px"> 
-                                <!--begin::Nav--> 
-                                <div class="stepper-nav ps-lg-10"> 
-                                    <!--begin::Step 1--> 
-                                    <div class="stepper-item current" data-kt-stepper-element="nav"> 
-                                        <!--begin::Line--> 
+                    <!--end::Close-->
+                    </div>
+                    <!--end::Modal header-->
+                    <!--begin::Modal body-->
+                    <div class="modal-body py-lg-10 px-lg-10">
+                        <!--begin::Stepper-->
+                        <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
+                            <!--begin::Aside-->
+                            <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
+                                <!--begin::Nav-->
+                                <div class="stepper-nav ps-lg-10">
+                                    <!--begin::Step 1-->
+                                    <div class="stepper-item current" data-kt-stepper-element="nav">
+                                        <!--begin::Line-->
                                         <div class="stepper-line w-40px"></div>
         {%if obj %}
-        <form method='POST' role="form" class="form-inline" action="{% url 'profesor_editar' obj.pk %}"> 
+        <form method='POST' role="form" class="form-inline" action="{% url 'profesor_editar' obj.pk %}">
         {%else %}
-        <form method="POST" role="form" class="form-inline" action="{% url 'profesor_crear' %}"> 
+        <form method="POST" role="form" class="form-inline" action="{% url 'profesor_crear' %}">
         {%endif%}
-            {% csrf_token %}
-            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                {%if obj%}Editar {% else %}Nuevo {% endif %}Profesor
+        {% csrf_token %}
+        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+            {%if obj%}Editar {% else %}Nuevo {% endif %}Profesor
+        </div>
+        <div class="dropdown-diviser">
+        </div>
+        {% comment %} <div class="row col-10">
+            {{form.as_p}}
+        </div> {% endcomment %}
+        <div class="row">
+            <div >
+                <div class="input-group">
+                    {% comment %} <input type="text" name="nombre_profesor" maxlength="50" class="form-control" required id="id_nombre_profesor"
+                    placeholder="Nombre" value="{%if obj%}  {{ obj.nombre_profesor}} {% endif%}"> {% endcomment %}
+                {{ form.nombre_profesor}}
+                </div>
+            </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <input type="text" name="apellido_profesor" maxlength="70"  class="form-control" required id="id_apellido_profesor"
+                placeholder="Apellido" value="{%if obj%}  {{ obj.apellido_profesor}} {% endif%}"> {% endcomment %}
+                {{ form.apellido_profesor}}
             </div>
-            <div class="dropdown-diviser">
+            </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <input type="text" name="telefono_profesor" maxlength="15" class="form-control" required id="id_telefono_profesor"                    placeholder="Telefono" value="{%if obj%}  {{ obj.telefono_profesor}} {% endif%}"> {% endcomment %}
+                {{ form.telefono_profesor}}
             </div>
-            <div class="row">
-                {{form.as_p}}
+            </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <input type="email" name="email_profesor" maxlength="254" class="form-control" required id="id_email_profesor"
+                placeholder="Email" value="{%if obj%}  {{ obj.email_profesor}} {% endif%}">                </div> {% endcomment %}
+                {{ form.email_profesor}}
             </div>
-            <div class="dropdown-diviser">
+        </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <input type="text" name="direccion_profesor" maxlength="40" class="form-control" required id="id_direccion_profesor"
+                placeholder="Direccion" value="{%if obj%}  {{ obj.direccion_profesor}} {% endif%}"> {% endcomment %}
+                {{ form.direccion_profesor}}
             </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-danger" type="submit">
-                        <span class="fa fa-save">
-                        </span>Guardar</button>
-                        {% comment %} <a href="{% url 'inv:producto_list' %}" class="btn btn-success">
-                            <span class="fa fa-undo">Cancelar</span>
-                        </a> {% endcomment %}
-                        <button type="button" class="btn btn-success" onclick="return cerrar_modal()">
-                            Cancelar
-                        </button> 
-                    </div>
+        </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <label for="id_tipo_documento">Tipo de documento:</label>
+                <select name="tipo_documento" id="id_tipo_documento">
+                <option value="" selected="">---------</option>
+                <option value="1">Cedula</option>
+                <option value="2">Pasaporte</option>
+                <option value="3">Tarjeta de identidad</option>
+                </select> {% endcomment %}
+                {{ form.tipo_documento}}
             </div>
-        </form>
-        
+            </br>
+        </div>
+        <div >
+            <div class="input-group">
+                {% comment %} <input type="number" name="numero_documento" min="1" max="922337203685477" class="form-control" required id="id_numero_documento"
+                placeholder="Número de documento" value="{%if obj%}  {{ obj.numero_documento}} {% endif%}"> {% endcomment %}
+                {{ form.numero_documento}}
+            </div>
+            </br>
+        </div>
+        <div class="dropdown-diviser">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-danger" type="submit">
+                    <span class="fa fa-save">
+                    </span>Guardar</button>
+                    {% comment %} <a href="{% url 'inv:producto_list' %}" class="btn btn-success">
+                        <span class="fa fa-undo">Cancelar</span>
+                    </a> {% endcomment %}
+                    <button type="button" class="btn btn-success" onclick="return cerrar_modal()">
+                        Cancelar
+                    </button> 
+                </div>
+        </div>
+    </form>
+    
 
-        
+    
 </div>
 </div>
 </div>
