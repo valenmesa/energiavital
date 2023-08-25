@@ -22,11 +22,11 @@ class ClienteForm (forms.ModelForm):
             'tipo_documento':'Tipo de documento',
             'numero_documento': 'Numero de documento',
         }
-        Widgets={
+        widgets={
             'nombre_cliente': forms.TextInput(attrs={'class':'form-control'}),
             'apellido_cliente': forms.TextInput(attrs={'class':'form-control'}),
-            'Telefono_cliente': forms.TextInput(attrs={'class':'form-control'}),
-            'Email_cliente': forms.TextInput(attrs={'class':'form-control'}),
+            'telefono_cliente': forms.TextInput(attrs={'class':'form-control'}),
+            'email_cliente': forms.TextInput(attrs={'class':'form-control'}),
             'direccion_cliente': forms.TextInput(attrs={'class':'form-control'}),
             'tipo_documento': forms.Select(attrs={'class':'form-control'}),
             'numero_documento': forms.TextInput(attrs={'class':'form-control'}),

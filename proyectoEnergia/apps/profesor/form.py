@@ -22,11 +22,11 @@ class ProfesorForm (forms.ModelForm):
             'tipo_documento':'Tipo de documento',
             'numero_documento': 'Numero de documento',
         }
-        Widgets={
+        widgets={
             'nombre_profesor': forms.TextInput(attrs={'class':'form-control'}),
             'apellido_profesor': forms.TextInput(attrs={'class':'form-control'}),
-            'Telefono_profesor': forms.TextInput(attrs={'class':'form-control'}),
-            'Email_profesor': forms.TextInput(attrs={'class':'form-control'}),
+            'telefono_profesor': forms.TextInput(attrs={'class':'form-control'}),
+            'email_profesor': forms.TextInput(attrs={'class':'form-control'}),
             'direccion_profesor': forms.TextInput(attrs={'class':'form-control'}),
             'tipo_documento': forms.Select(attrs={'class':'form-control'}),
             'numero_documento': forms.TextInput(attrs={'class':'form-control'}),
@@ -35,5 +35,5 @@ class ProfesorForm (forms.ModelForm):
     #     super().__init__(*args, **Kwargs)
     #     for field in iter(self.fields):
     #         self.fields[field].widget.attrs.update({
-    #             'class':'form-control'
+    #             'class':'form-control','placeholder':'Nombre'
     #         })
