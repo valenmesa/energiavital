@@ -16,3 +16,10 @@ class RegistroForm (UserCreationForm):
             'last_name': 'Apellidos',
             'email': 'Correo',
         }
+    
+    def __init__(self, *args, **Kwargs):
+        super().__init__(*args, **Kwargs)
+        for field in iter(self.fields):
+            self.fields[field].widget.attrs.update({
+                'class':'form-control'
+            })

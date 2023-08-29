@@ -104,7 +104,14 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Title-->
 								<!--begin::Link-->
 								<div class="text-gray-400 fw-bold fs-4">Eres nuevo?
-								<a href="{% url 'usuario_crear'%}" class=" fw-bolder" style="color: #9ce9de">Crear una cuenta</a></div>
+								{% comment %} <a href="{% url 'usuario_crear'%}" class=" fw-bolder" style="color: #9ce9de">Crear una cuenta</a> {% endcomment %}
+								<a class=" fw-bolder" style="color: #9ce9de" onclick="return abrir_modal('{%url 'usuario_crear' %}')" href="#">Crear una cuenta</a>
+									
+							</div>
+							{% comment %} pepita {% endcomment %}
+							<div class="modal" id="popup" >
+
+							</div>
 								<!--end::Link-->
 							</div>
 							<!--begin::Heading-->
@@ -179,6 +186,26 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="https://preview.keenthemes.com/metronic8/demo1/assets/js/custom/authentication/sign-in/general.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+		{% block control_modal%}
+		<script>
+			function abrir_modal(url)
+			{
+				$("#popup").load(url, function(){
+					$(this).modal({
+						backdrop: 'static',
+						keyboard: false
+					})
+					$(this).modal("show");
+				});
+				return false;
+			}
+			function cerrar_modal(url)
+			{
+				$("#popup").modal('hide');
+				return false;
+			};
+		</script>
+		{% endblock %}
 	</body>
 	<!--end::Body-->
 
