@@ -48515,11 +48515,12 @@ body {
   width: 100px;
 }
 .container1 {
-    display: flex;
-    align-items: center; /* Centrar verticalmente los elementos */
+  display: flex;
+  align-items: center; /* Centrar verticalmente los elementos */
+  gap: 10px; /* Agregar espacio entre los elementos */
 }
 
 .person-info, .person-description {
-    flex: 1; /* Distribuir el espacio disponible de manera equitativa */
-    padding: 20px; /* Añadir espacio entre los elementos si lo deseas */
+  flex: 1; /* Distribuir el espacio disponible de manera equitativa */
 }
+
