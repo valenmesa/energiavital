@@ -37985,6 +37985,9 @@ a:hover {
 .btn.btn-light-warning.dropdown-toggle:after {
   color: #FFC700;
 }
+.btn-orange{
+  background-color: #FF7631;
+}
 .btn-check:checked + .btn.btn-light-warning, .btn-check:active + .btn.btn-light-warning, .btn.btn-light-warning:focus:not(.btn-active), .btn.btn-light-warning:hover:not(.btn-active), .btn.btn-light-warning:active:not(.btn-active), .btn.btn-light-warning.active, .btn.btn-light-warning.show, .show > .btn.btn-light-warning {
   color: #FFFFFF;
   border-color: #FFC700;
@@ -48511,3 +48514,13 @@ body {
 .botoncitos{
   width: 100px;
 }
+.container1 {
+  display: flex;
+  align-items: center; /* Centrar verticalmente los elementos */
+  gap: 10px; /* Agregar espacio entre los elementos */
+}
+
+.person-info, .person-description {
+  flex: 1; /* Distribuir el espacio disponible de manera equitativa */
+}
+

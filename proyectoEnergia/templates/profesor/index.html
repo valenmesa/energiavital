@@ -28,7 +28,7 @@
 		<meta property="og:url" content="https://keenthemes.com/metronic" />
 		<meta property="og:site_name" content="Energia | Vital" />
 		<link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-		<link rel="shortcut icon" href="../../static/assets/media/logos/logo.png" />
+		<link rel="shortcut icon" href="../../static/assets/media/logos/logoblancocorto.png" />
 		{% load static %}
 		<!--begin::Fonts-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -158,7 +158,7 @@
 								<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
 							</h1>
 						</div>
-						<div class="custom-carousel">
+						<div class="custom-carousel" style="max-width: 1349px;">
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<img src="{% static "assets/media/inicio/yoga4.jpg"%}" class="d-block" alt="...">
@@ -632,7 +632,7 @@
 				<path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
 			</svg>
 		</div>
-			<!--end::Statistics Section-->
+			{% comment %} <!--end::Statistics Section-->
 			<!--begin::Team Section-->
 			<div class="py-10 py-lg-20">
 				<!--begin::Container-->
@@ -679,6 +679,60 @@
 						<!--end::Button-->
 					
 					<!--end::Slider-->
+				</div>
+				<!--end::Container-->
+			</div> {% endcomment %}
+			<div class="py-10 py-lg-20">
+				<!--begin::Container-->
+				<div>
+					<!--begin::Heading-->
+					<div class="text-center mb-12">
+						<!--begin::Title-->
+						<h3 class="fs-2hx text-dark mb-5" id="team" data-kt-scroll-offset="{default: 100, lg: 150}">Profesores</h3>
+						<!--end::Title-->
+						<!--begin::Sub-title-->
+						<div class="fs-5 text-muted fw-bold">Nunca es tarde para tener una vida más saludable</div>
+						<!--end::Sub-title=-->
+					</div>
+				</div>
+					<div class="container1" style="max-width: 1200px;">
+						<div class="person-info">
+							<div class="text-center">
+								<!--begin::Photo-->
+								<div class="octagon mx-auto mb-5 d-flex w-300px h-300px bgi-no-repeat bgi-size-contain" style="background-image:url('assets/media/avatars/300-1.jpg') margin-right: -100px;"> 
+									<img src="{% static "assets/media/inicio/Alvaro.jpg"%}" class="" alt="" /></div>
+								<!--end::Photo-->
+								<!--begin::Person-->
+								<div class="mb-0">
+									<!--begin::Name-->
+									<a href="#" class="text-dark fw-bolder text-hover-primary fs-3">Alvaro Cano</a>
+									<!--end::Name-->
+									<!--begin::Position-->
+									<div class="text-muted fs-6 fw-bold mt-1">Fundador</div>
+									<!--begin::Position-->
+								</div>
+								<!--end::Person-->
+							</div>
+						</div>
+						<div class="person-description">
+							<div class="fs-3 grisesito-2 text-black" style="margin-left: -10px;" >Soy Alvaro Emilio Cano, el maestro y creador del servicio denominado Energía Vital.
+								Tengo conocimientos de medicina tradicional, me he enfocado en perfeccionar estas artes para otorgar el servicio más
+								completo, satisfactorio y especial que puedas tener. Llevo dando clases de Yoga desde hace más de 3 años, mejorando mi
+								dicción, pedagogía y manera de que mis aprendizajes queden en la persona para siempre. Mi mayor objetivo es aquel de
+								poder expandir el arte a todo Medellín  de la medicina tradicional para: Mayor espiritualidad, Equilibrio emocional y
+								regulación de las energías.
+								Soy demasiado entregado en mi oficio y podría asegurar que haré lo mejor posible para poder darte la experiencia más
+								completa y especial posible 
+							</div>
+						</div>
+					</div>
+						</br>
+						</br>
+						</br>
+					
+						
+						<!--end::Button-->
+					
 				</div>
 				<!--end::Container-->
 			</div>
@@ -971,94 +1025,33 @@
 			<!--end::Testimonials Section-->
 			<!--begin::Footer Section-->
 			<div class="mb-0">
-				<!--begin::Curve top-->
-				<div class="landing-curve landing-dark-color">
-					<svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
-					</svg>
-				</div>
-				<!--end::Curve top-->
-				<!--begin::Wrapper-->
 				<div class="landing-dark-bg pt-20">
-					<!--begin::Container-->
-					<div class="container">
-						<!--begin::Row-->
-						<div class="row py-10 py-lg-20">
-							<!--begin::Col-->
-							
-							<!--end::Col-->
-							<!--begin::Col-->
-							<div class="col-lg-6 ps-lg-16">
-								<!--begin::Navs-->
-								<div class="d-flex justify-content-center">
-									<!--begin::Links-->
-									<div class="d-flex fw-bold flex-column me-20">
-										<!--begin::Subtitle-->
-										<h4 class="fw-bolder text-gray-400 mb-6">Mas Sobre Nosotros</h4>
-										<!--end::Subtitle-->
-										<!--begin::Link-->
-										<a href="https://keenthemes.com/faqs" class="text-white opacity-50 text-hover-primary fs-5 mb-6">FAQ</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="documentation/getting-started.html" class="text-white opacity-50 text-hover-primary fs-5 mb-6">Documentaions</a>
-									</div>
-									<!--end::Links-->
-									<!--begin::Links-->
-									<div class="d-flex fw-bold flex-column ms-lg-20">
-										<!--begin::Subtitle-->
-										<h4 class="fw-bolder text-gray-400 mb-6">Contactanos</h4>
-										<!--end::Subtitle-->
-										<!--begin::Link-->
-										<a href="https://www.facebook.com/keenthemes" class="mb-6">
-											<img src="assets/media/svg/brand-logos/facebook-4.svg" class="h-20px me-2" alt="" />
-											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Facebook</span>
-										</a>
-										<!--end::Link-->
-										<!--begin::Link-->
-										<a href="https://www.instagram.com/keenthemes" class="mb-6">
-											<img src="assets/media/svg/brand-logos/instagram-2-1.svg" class="h-20px me-2" alt="" />
-											<span class="text-white opacity-50 text-hover-primary fs-5 mb-6">Instagram</span>
-										</a>
-										<!--end::Link-->
-									</div>
-									<!--end::Links-->
-								</div>
-								<!--end::Navs-->
-							</div>
-							<!--end::Col-->
-						</div>
-						<!--end::Row-->
-					</div>
-					<!--end::Container-->
-					<!--begin::Separator-->
-					<div class="landing-dark-separator"></div>
-					<!--end::Separator-->
-					<!--begin::Container-->
 					<div class="container">
 						<!--begin::Wrapper-->
 						<div class="d-flex flex-column flex-md-row flex-stack py-7 py-lg-10">
 							<!--begin::Copyright-->
 							<div class="d-flex align-items-center order-2 order-md-1">
 								<!--begin::Logo-->
-								<a href="landing.html">
-									<img alt="Logo" src="{% static 'assets/media/logos/logo.svg' %}" class="h-15px h-md-20px" />
+								<a href="#">
+									<img alt="Logo" src="{% static 'assets/media/logos/logoblanco.png' %}" class="h-25px h-md-60px" />
 								</a>
 								<!--end::Logo image-->
 								<!--begin::Logo image-->
-								<span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="https://keenthemes.com/">Energia Vital</span>
+								<span class="mx-5 fs-6 fw-bold text-white pt-1" href="https://keenthemes.com/">Energia Vital</span>
 								<!--end::Logo image-->
 							</div>
 							<!--end::Copyright-->
 							<!--begin::Menu-->
 							<ul class="menu menu-gray-600 menu-hover-primary fw-bold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
 								<li class="menu-item">
-									<a href="https://keenthemes.com/" target="_blank" class="menu-link px-2">About</a>
+									<a class="menu-link nav-link py-3 px-4 px-xxl-6 text-white" href="#how-it-works" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">Quienes somos</a>
+									{% comment %} <a href="#how-it-works" target="_blank" class="menu-link px-2">Sobre Nosotros</a> {% endcomment %}
 								</li>
 								<li class="menu-item mx-5">
-									<a href="https://devs.keenthemes.com/" target="_blank" class="menu-link px-2">Support</a>
+									<a href="https://devs.keenthemes.com/" target="_blank" class="menu-link px-2 text-white">Facebook</a>
 								</li>
 								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">Purchase</a>
+									<a href="https://www.instagram.com/energiavitalalvaro/" target="_blank" class="menu-link px-2 text-white">Instagram</a>
 								</li>
 							</ul>
 							<!--end::Menu-->

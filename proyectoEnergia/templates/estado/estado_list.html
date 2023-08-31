@@ -3,7 +3,7 @@
 {%block content%}
 <h1>Estado</h1>
 <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'estado_crear' %}')" href="#"
-role="button"><i class="fa fa-plus-square"></i>Nueva</a>
+role="button"><i class="fa fa-plus-square"></i></a>
 </div>
 <table class="table table-striped">
     <thead>
@@ -20,11 +20,11 @@ role="button"><i class="fa fa-plus-square"></i>Nueva</a>
             <td>{{estado.id}}</td>
             <td>{{estado.descripcion_estado}}</td>
             <td>
-                <a class="btn btn-success btn-circle" onclick="return abrir_modal('{%url 'estado_editar' estado.id %}')" href="#"
-                role="button"><i class="fa fa-edit"></i></a>
+                <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{%url 'estado_editar' estado.id %}')" href="#"
+                role="button"><i class="fa fa-edit text-white"></i></a>
 
                 <a class="btn btn-danger btn-circle" href="{%url 'estado_eliminar' estado.id %}"
-                role="button"><i class="fa fa-trash-alt"></i></a>
+                role="button"><i class="fas fa-power-off"></i></a>
             </td>
             {% endfor%}
             {% else %}
