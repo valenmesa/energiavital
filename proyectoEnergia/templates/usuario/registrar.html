@@ -53,8 +53,8 @@
         <div class="dropdown-diviser">
         </div>
         <div class="row">
-            {% comment %} {{form.as_p}} {% endcomment %}
-            <div class="col-5">
+            {{form.as_p}}
+            {% comment %} <div class="col-5">
                 <div class="input-group">
                         {{ form.username}}
                 </div>
@@ -78,7 +78,7 @@
                 <div class="input-group">
                         {{ form.password}}
                 </div>
-            </div>
+            </div> {% endcomment %}
         </div>
     
         <div class="dropdown-diviser">
