@@ -31,10 +31,19 @@
 		<link rel="stylesheet" type="text/css" href="{% static 'assets/plugins/global/plugins.bundle.css' %}">
 
 		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.bundle.css' %}">
+		
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min' %}">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/dataTables.bootstrap5.min' %}">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery.datetimepicker.min' %}">
 
 		{% comment %} datatable {% endcomment %}
 		<link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/datatables/dataTables.bootstrap4.css' %}">
+	
 		<link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/datatables/dataTables.bootstrap4.min.css' %}">
+
+		<link rel="stylesheet" type="text/css" href="{% static 'assets/vendor/datatables/jquery.dataTables.min.css' %}">
 
         <!--end::Global Stylesheets Bundle-->
 		<!--Begin::Google Tag Manager -->
@@ -4180,6 +4189,18 @@
         <script src="{% static  'assets/plugins/global/plugins.bundle.js' %}"></script>
 
         <script src="{% static  'assets/js/scripts.bundle.js' %}"></script>
+
+        <script src="{% static  'assets/js/bootstrap.min.js' %}"></script>
+
+        <script src="{% static  'assets/js/datatTables.bootstrap5.min.js' %}"></script>
+
+        <script src="{% static  'assets/js/datatTables.min.js' %}"></script>
+
+        <script src="{% static  'assets/js/jquery.datatTables.min.js' %}"></script>
+
+        <script src="{% static  'assets/js/jquery-3.7.0.js' %}"></script>
+
+        <script src="{% static  'assets/js/jquery-3.7.1.min.js' %}"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Vendors Javascript(used by this page)-->
 
@@ -4204,9 +4225,19 @@
 		{% comment %} datatable {% endcomment %}
 
 		<script src="{% static 'assets/vendor/datatables/dataTables.bootstrap4.js' %}"></script>
+
 		<script src="{% static 'assets/vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>
+
 		<script src="{% static 'assets/vendor/datatables/jquery.dataTables.js' %}"></script>
+		
 		<script src="{% static 'assets/vendor/datatables/jquery.dataTables.min.js' %}"></script>
+
+		<script src="{% static 'assets/vendor/datatables/jquery.easing.min.js' %}"></script>
+
+		{% comment %} <script src="{% static 'assets/vendor/datatables/jquery.min.js' %}"></script> {% endcomment %}
+
+		{% comment %} <script src="{% static 'assets/vendor/datatables/jquery.slim.min.js' %}"></script> {% endcomment %}
+
 		{% block js_page %} {% endblock %}
 
 		<!--end::Page Custom Javascript-->
