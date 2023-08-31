@@ -48514,3 +48514,12 @@ body {
 .botoncitos{
   width: 100px;
 }
+.container1 {
+    display: flex;
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.person-info, .person-description {
+    flex: 1; /* Distribuir el espacio disponible de manera equitativa */
+    padding: 20px; /* Añadir espacio entre los elementos si lo deseas */
+}
