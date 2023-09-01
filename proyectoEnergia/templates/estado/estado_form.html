@@ -1,4 +1,4 @@
-<div class="modal-dialog ">
+<div class="modal-dialog">
     <div class="modal-content">
         <!--begin::Modal header-->
         <div class="modal-header">
@@ -24,9 +24,9 @@
                         <!--begin::Stepper-->
                         <div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_modal_create_app_stepper">
                             <!--begin::Aside-->
-                            <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-300px">
+                            <div class="d-flex justify-content-center justify-content-xl-start flex-row-auto w-100 w-xl-400px">
                                 <!--begin::Nav-->
-                                <div class="stepper-nav ps-lg-10">
+                                <div class="stepper-nav ps-lg-12">
                                     <!--begin::Step 1-->
                                     <div class="stepper-item current" data-kt-stepper-element="nav">
                                         <!--begin::Line-->
@@ -42,7 +42,7 @@
             </div>
             <div class="dropdown-diviser">
             </div>
-            <div class="row">
+            <div class="row" style="width: 390px">
                 {{form.as_p}}
             </div>
             <div class="dropdown-diviser">
@@ -53,9 +53,6 @@
                     <button class="btn btn-danger" type="submit">
                         <span class="fa fa-save">
                         </span>Guardar</button>
-                        {% comment %} <a href="{% url 'inv:producto_list' %}" class="btn btn-success">
-                            <span class="fa fa-undo">Cancelar</span>
-                        </a> {% endcomment %}
                         <button type="button" class="btn btn-success" onclick="return cerrar_modal()">
                             Cancelar
                         </button>

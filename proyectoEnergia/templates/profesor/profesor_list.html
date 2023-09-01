@@ -36,7 +36,7 @@
             <td>
                 <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
                 role="button"><i class="fa fa-edit text-white"></i></a>
-                <a class="btn btn-danger btn-circle" href="{%url 'profesor_eliminar' profesor.id %}"
+                <a class="btn btn-danger btn-circle" href="{%url 'profesor_inactivar' profesor.id %}"
                 role="button"><i class="fas fa-power-off"></i></a>
             </td>
             {% endfor%}
