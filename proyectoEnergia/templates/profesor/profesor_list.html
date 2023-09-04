@@ -18,6 +18,7 @@
             <td>Direccion</td>
             <td>Tipo documento</td>
             <td>Numero documento</td>
+            <td>Estado</td>
             <td>Acciones</td>
         </tr>
     </thead>
@@ -33,10 +34,11 @@
             <td>{{profesor.direccion_profesor}}</td>
             <td>{{profesor.tipo_documento.descripcion}}</td>
             <td>{{profesor.numero_documento}}</td>
+            <td>{{profesor.estado|yesno:"Activo, Inactivo"}}</td>
             <td>
                 <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
                 role="button"><i class="fa fa-edit text-white"></i></a>
-                <a class="btn btn-danger btn-circle" href="{%url 'profesor_eliminar' profesor.id %}"
+                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'profesor_inactivar' profesor.id %}')" href="#"
                 role="button"><i class="fas fa-power-off"></i></a>
             </td>
             {% endfor%}

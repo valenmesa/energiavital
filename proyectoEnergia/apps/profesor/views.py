@@ -46,9 +46,22 @@ class ProfesorEdit(LoginRequiredMixin, generic.UpdateView):
         return super().form_valid(form)
 
 
-# Eliminar registro
-class ProfesorDelete(LoginRequiredMixin, generic.DeleteView):
-    model=Profesor
-    template_name='profesor/profesor_delete.html'
-    context_object_name="obj"
-    success_url= reverse_lazy('profesor_listar')
+# Inactivar registro
+def ProfesorInactivar(request, id):
+    template_name="profesor/profesor_inactivar.html"
+    contexto={}
+    prv=Profesor.objects.filter(pk=id).first()
+    
+    if not prv:
+        return HttpResponse("Profesor no existe" + str(id))
+    
+    if request.method=='GET':
+        contexto={'obj': prv}
+    
+    if request.method=='POST':
+        prv.estado=False
+        prv.save()
+        contexto={'obj': 'OK'}
+        return HttpResponse("Profesor Inactivado")
+
+    return render(request, template_name, contexto)

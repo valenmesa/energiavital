@@ -18,6 +18,7 @@ class Profesor(models.Model):
     direccion_profesor=models.CharField(max_length=40)
     tipo_documento=models.ForeignKey(Tipo_Documento, null=True, blank=True, on_delete=models.CASCADE)
     numero_documento=models.BigIntegerField()
+    estado=models.BooleanField(default=True)
     def __str__(self):
         return '{} {}'.format(self.nombre_profesor, self.apellido_profesor)
 
