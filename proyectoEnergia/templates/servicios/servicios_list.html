@@ -16,6 +16,7 @@
             <td>Nombre</td>
             <td>Descripción</td>
             <td>Valor</td>
+            <td>Estado</td>
             <td>Acciones</td>
         </tr>
     </thead>
@@ -27,11 +28,12 @@
             <td>{{servicios.Nombre_Servicio}}</td>
             <td>{{servicios.Descripcion_Servicio}}</td>
             <td>{{servicios.Valor_Servicio}}</td>
+            <td>{{servicios.estado|yesno:"Activo, Inactivo"}}</td>
             <td>
                 <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{%url 'servicios_editar' servicios.id %}')" href="#"
                 role="button"><i class="fa fa-edit text-white"></i></a>
 
-                <a class="btn btn-danger btn-circle" href="{%url 'servicios_eliminar' servicios.id %}"
+                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'servicios_inactivar' servicios.id %}')" href="#"
                 role="button"><i class="fas fa-power-off"></i></a>
             </td>
             {% endfor%}
