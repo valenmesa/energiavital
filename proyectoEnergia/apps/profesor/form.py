@@ -12,6 +12,7 @@ class ProfesorForm (forms.ModelForm):
             'direccion_profesor',
             'tipo_documento',
             'numero_documento',
+            'estado',
         ]
         labels ={
             'nombre_profesor': 'Nombre',
@@ -21,6 +22,7 @@ class ProfesorForm (forms.ModelForm):
             'direccion_profesor':'Direccion',
             'tipo_documento':'Tipo de documento',
             'numero_documento': 'Numero de documento',
+            'estado': 'Estado',
         }
         widgets={
             'nombre_profesor': forms.TextInput(attrs={'class':'form-control'}),
@@ -37,3 +39,11 @@ class ProfesorForm (forms.ModelForm):
     #         self.fields[field].widget.attrs.update({
     #             'class':'form-control','placeholder':'Nombre'
     #         })
+    def __init__(self, *args, **Kwargs):
+            super().__init__(*args, **Kwargs)
+            for field in iter(self.fields):
+                self.fields[field].widget.attrs.update({
+                    'class':'form-control'
+                })
+
+            self.fields['estado'] = forms.BooleanField()
