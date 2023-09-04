@@ -4,8 +4,8 @@
 
 <h1>Profesor</h1>
 
-    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'profesor_crear' %}')" href="#"
-    role="button"><i class="fa fa-plus-square"></i></a>
+    <a class="btn" onclick="return abrir_modal('{%url 'profesor_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square"  style="font-size: 30px; color: #00590F "></i></a>
 </div>
 <table class="table table-striped">
     <thead>
@@ -34,10 +34,10 @@
             <td>{{profesor.tipo_documento.descripcion}}</td>
             <td>{{profesor.numero_documento}}</td>
             <td>
-                <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
-                role="button"><i class="fa fa-edit text-white"></i></a>
-                <a class="btn btn-danger btn-circle" href="{%url 'profesor_eliminar' profesor.id %}"
-                role="button"><i class="fas fa-power-off"></i></a>
+                <a onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
+                role="button"><i class="fa fa-edit" style="font-size: 20px; color: #FF7631"></i></a>
+                <a href="{%url 'profesor_eliminar' profesor.id %}"
+                role="button"><i class="fas fa-power-off"style="font-size: 20px; color:red" ></i></a>
             </td>
             {% endfor%}
             {% else %}

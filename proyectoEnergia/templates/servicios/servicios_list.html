@@ -5,8 +5,8 @@
 <h1>Servicios</h1>
 
 
-    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'servicios_crear' %}')" href="#"
-    role="button"><i class="fa fa-plus-square"></i></a>
+    <a class="btn" onclick="return abrir_modal('{%url 'servicios_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square" style="font-size: 30px; color: #00590F "></i></a>
 </div>
 
 <table class="table table-striped">
@@ -28,11 +28,11 @@
             <td>{{servicios.Descripcion_Servicio}}</td>
             <td>{{servicios.Valor_Servicio}}</td>
             <td>
-                <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{%url 'servicios_editar' servicios.id %}')" href="#"
-                role="button"><i class="fa fa-edit text-white"></i></a>
+                <a onclick="return abrir_modal('{%url 'servicios_editar' servicios.id %}')" href="#"
+                role="button"><i class="fa fa-edit"style="font-size: 20px; color: #FF7631"></i></a>
 
-                <a class="btn btn-danger btn-circle" href="{%url 'servicios_eliminar' servicios.id %}"
-                role="button"><i class="fas fa-power-off"></i></a>
+                <a href="{%url 'servicios_eliminar' servicios.id %}"
+                role="button"><i class="fas fa-power-off" style="font-size: 20px; color:red"></i></a>
             </td>
             {% endfor%}
             {% else %}
