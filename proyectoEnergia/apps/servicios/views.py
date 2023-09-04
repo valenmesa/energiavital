@@ -44,9 +44,22 @@ class serviciosEdit(LoginRequiredMixin, generic.UpdateView):
         form.instance.um=self.request.user.id
         return super().form_valid(form)
     
-# Eliminar registro
-class serviciosDelete(LoginRequiredMixin, generic.DeleteView):
-    model=servicios
-    template_name='servicios/servicios_delete.html'
-    success_url= reverse_lazy('servicios_listar')
-    context_object_name="obj"
+# Inactivar registro
+def ServiciosInactivar(request, id):
+    template_name="servicios/servicios_inactivar.html"
+    contexto={}
+    prv=servicios.objects.filter(pk=id).first()
+    
+    if not prv:
+        return HttpResponse("Servicios no existe" + str(id))
+    
+    if request.method=='GET':
+        contexto={'obj': prv}
+    
+    if request.method=='POST':
+        prv.estado=False
+        prv.save()
+        contexto={'obj': 'OK'}
+        return HttpResponse("Servicios Inactivado")
+
+    return render(request, template_name, contexto)
