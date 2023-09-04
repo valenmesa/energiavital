@@ -12,6 +12,7 @@ class ClienteForm (forms.ModelForm):
             'direccion_cliente',
             'tipo_documento',
             'numero_documento',
+            'estado'
         ]
         labels ={
             'nombre_cliente': 'Nombre',
@@ -21,6 +22,7 @@ class ClienteForm (forms.ModelForm):
             'direccion_cliente':'Direccion',
             'tipo_documento':'Tipo de documento',
             'numero_documento': 'Numero de documento',
+            'estado': 'Estado',
         }
         widgets={
             'nombre_cliente': forms.TextInput(attrs={'class':'form-control'}),
@@ -31,3 +33,12 @@ class ClienteForm (forms.ModelForm):
             'tipo_documento': forms.Select(attrs={'class':'form-control'}),
             'numero_documento': forms.TextInput(attrs={'class':'form-control'}),
         }
+
+    def __init__(self, *args, **Kwargs):
+            super().__init__(*args, **Kwargs)
+            for field in iter(self.fields):
+                self.fields[field].widget.attrs.update({
+                    'class':'form-control'
+                })
+
+            self.fields['estado'] = forms.BooleanField()

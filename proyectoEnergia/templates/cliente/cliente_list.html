@@ -4,8 +4,8 @@
 <h1>Cliente</h1>
 
 
-    <a class="btn" onclick="return abrir_modal('{%url 'cliente_crear' %}')" href="#"
-    role="button"><i class="fa fa-plus-square" style="font-size: 30px; color: #00590F " ></i></a>
+    <a class="btn btn-primary btn-circle" onclick="return abrir_modal('{%url 'cliente_crear' %}')" href="#"
+    role="button"><i class="fa fa-plus-square"></i></a>
 </div>
 
 <table class="table table-striped">
@@ -19,6 +19,7 @@
             <td>Dirección</td>
             <td>Tipo documento</td>
             <td>Numero documento</td>
+            <td>Estado</td>
             <td>Acciones</td>
         </tr>
     </thead>
@@ -34,14 +35,12 @@
             <td>{{cliente.direccion_cliente}}</td>
             <td>{{cliente.tipo_documento.descripcion}}</td>
             <td>{{cliente.numero_documento}}</td>
-
+            <td>{{cliente.estado|yesno:"Activo, Inactivo"}}</td>
             <td>
-
-                <a  onclick="return abrir_modal('{%url 'cliente_editar' cliente.id %}')" href="#"
-                role="button"><i class="fa fa-edit" style="font-size: 20px; color: #FF7631"></i></a>
-                <a  href="{%url 'cliente_eliminar' cliente.id %}"
-                role="button"><i class="fas fa-power-off" style="font-size: 20px; color: red"></i></a>
-
+                <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{%url 'cliente_editar' cliente.id %}')" href="#"
+                role="button"><i class="fa fa-edit text-white"></i></a>
+                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'cliente_inactivar' cliente.id %}')" href="#"
+                role="button"><i class="fas fa-power-off"></i></a>
             </td>
 
             {% endfor%}
