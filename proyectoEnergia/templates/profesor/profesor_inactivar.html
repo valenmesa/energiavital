@@ -34,7 +34,7 @@
         <form method='post' class="form-inline" action="profesor/profesor_listar.html">
             {% csrf_token %}
             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                ¿Desea inactivar a {{object.nombre_profesor}} {{object.apellido_profesor}}?
+                ¿Desea inactivar a {{obj.nombre_profesor}} {{obj.apellido_profesor}}?
             </div>
             <button class="btn btn-danger"  type="submit" class="btn btn-primary" id="btnInactivar";>
                 <i class="far fa-question-circle"></i>
