@@ -51,14 +51,14 @@
         <br>
         <div class="row">
             <div class="col">
-                <button class="btn btn-danger" type="submit">
+                <button class="btn btn-success" type="submit">
                     <span class="fa fa-save">
-                    </span>Guardar</button>
+                    </span></button>
                     {% comment %} <a href="{% url 'inv:producto_list' %}" class="btn btn-success">
                         <span class="fa fa-undo">Cancelar</span>
                     </a> {% endcomment %}
-                    <button type="button" class="btn btn-success" onclick="return cerrar_modal()">
-                        Cancelar
+                    <button type="button" class="btn btn-success btn btn-danger" onclick="return cerrar_modal()">
+                        <i class="fa fa-solid fa-ban"></i>
                     </button>
                 </div>
         </div>
