@@ -37,9 +37,9 @@
             <td>{{profesor.estado|yesno:"Activo, Inactivo"}}</td>
             <td>
 
-                <a class="btn btn-orange btn-circle" onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
+                <a  onclick="return abrir_modal('{% url 'profesor_editar' profesor.id %}')" href="#"
                 role="button"><i class="fa fa-edit" style="font-size: 20px; color: #FF7631"></i></a>
-                <a class="btn btn-danger btn-circle" onclick="return abrir_modal('{% url 'profesor_inactivar' profesor.id %}')" href="#"
+                <a  onclick="return abrir_modal('{% url 'profesor_inactivar' profesor.id %}')" href="#"
                 role="button"><i class="fas fa-power-off" style="font-size: 20px; color:red"></i></a>
 
             </td>
